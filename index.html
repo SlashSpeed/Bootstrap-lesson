@@ -7,13 +7,106 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Smartninja bootstrap lesson</title>
 
-        <!-- Bootstrap CSS -->
+        <!-- Here we link in the bootstrap CSS files and required links-->
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </head>
 
     <body>
-        <h1>Hello, world!</h1>
+       <div class="container">
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><i class="glyphicon glyphicon-warning-sign"></i>My first bootstrap lesson</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+              <li><a href="../navbar-static-top/">Static top</a></li>
+              <li><a href="../navbar-fixed-top/"><i class="glyphicon glyphicon-thumbs-up"></i></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        
+      
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Big ass penguin</h1>
+        <p><img src="https://storage.googleapis.com/smartninja-org-assets/curriculums/wd1/img/big-ninja.png" class="img-responsive"></p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+        
+            <h1>Aw yis, look at this buttons:</h1> 
+            <div class="row">
+                <div class="col-md-4">   
+                    <button class="btn btn-default">Normal button</button>
+                    <button class="btn btn-primary">Normal button</button>    
+                    <button class="btn btn-info">Normal button</button>    
+                    <button class="btn btn-success">Only right choice</button>    
+                    <button class="btn btn-danger">DON'T CLICK THE BIG RED BUTTON.</button>   
+                </div>
+                 <div class=".col-md-6 .offset-md-3">   
+                    <button class="btn btn-default">Normal button</button>
+                    <button class="btn btn-primary">Normal button</button>    
+                    <button class="btn btn-info">Normal button</button>    
+                    <button class="btn btn-success">Only right choice</button>    
+                    <button class="btn btn-danger">DON'T CLICK THE BIG RED BUTTON.</button>   
+                </div>
+            </div>
+        <div>
+            <h1>This are alerts/warnings</h1>
+            <div class="alert alert-success" role="alert">There we go</div>
+            <div class="alert alert-danger" role="alert">There we go</div>
+            <div class="alert alert-info" role="alert">There we go</div>
+            <div class="alert alert-warning" role="alert">There we go</div>
+        </div>
+        
+        <div>
+            <h1>Progress bar progress</h1>
+            <div class="progress"> <!-- <--nosilec za progress bar -->
+                <div class="progress-bar" style="width:50%" role="progressbar">50%</div> <!-- da zapolniš -->
+            </div>
+        </div>
+        
+        <div class="panel panel-default">
+            <div class="panel-heading">Heading</div>
+            <div class="panel-body">Content</div>
+            <div class="panel-footer">Footer</div>
+        </div>
+        
+        
+        </div><!--/.container-fluid -->
+        
     </body>
 </html>
